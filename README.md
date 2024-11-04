@@ -60,3 +60,49 @@ Common errors include:
 
 Authentication Error: Invalid API key.
 Endpoint Error: Incorrect endpoint.
+
+02.Language Detection with Azure Text Analytics Client
+This repository contains the first project in learning AI/ML with Azure using the Azure Text Analytics Client SDK to detect the language of user-input text.
+
+Overview
+This Python script takes text input from the user, sends it to Azure’s Text Analytics service using the TextAnalyticsClient, and returns the detected language. It’s an introductory project to explore cloud-based AI/ML capabilities.
+
+Requirements
+Python 3.x
+Libraries: dotenv, azure-ai-textanalytics
+Azure Text Analytics API: Requires an endpoint URL and API key.
+Setup
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/Azur-aiml-implementation.git
+Install dependencies:
+
+bash
+Copy code
+pip install python-dotenv azure-ai-textanalytics
+Configure environment variables:
+
+Create a .env file in the project directory and add:
+env
+Copy code
+AI_SERVICE_ENDPOINT=your_azure_endpoint
+AI_SERVICE_KEY=your_azure_key
+Usage
+Run the script:
+bash
+Copy code
+python script_name.py
+Enter text to detect its language; type "quit" to exit.
+Sample Output
+Entering "Hola" as input might produce:
+
+makefile
+Copy code
+Language: Spanish
+Error Handling
+Common errors include:
+
+Authentication Error: Invalid API key.
+Endpoint Error: Incorrect endpoint.
