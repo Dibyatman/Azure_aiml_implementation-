@@ -116,7 +116,7 @@ Endpoint Error: Incorrect endpoint.
 
 
 
-3. Background Removal and Image Analysis with Azure Computer Vision
+03. Background Removal and Image Analysis with Azure Computer Vision
 This repository contains the second project in learning AI/ML with Azure, focused on background removal and image analysis using the Azure Computer Vision service.
 
 Overview
