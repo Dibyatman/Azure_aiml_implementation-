@@ -2,6 +2,7 @@
 Welcome to my AI/ML project repository! Here, you'll find a collection of my projects, leveraging Azure's capabilities for model development, deployment, and data management. This space is dedicated to sharing tools, insights, and resources in the AIML domain.
 
 
+
 1 . Language Detection with Azure Text Analytics API
 This repository contains the first project in learning AI/ML with Azure. The project uses the Azure Text Analytics API to detect the language of user-input text.
 
@@ -61,6 +62,10 @@ Common errors include:
 Authentication Error: Invalid API key.
 Endpoint Error: Incorrect endpoint.
 
+
+
+
+
 02.Language Detection with Azure Text Analytics Client
 This repository contains the first project in learning AI/ML with Azure using the Azure Text Analytics Client SDK to detect the language of user-input text.
 
@@ -106,3 +111,63 @@ Common errors include:
 
 Authentication Error: Invalid API key.
 Endpoint Error: Incorrect endpoint.
+
+
+
+
+
+3. Background Removal and Image Analysis with Azure Computer Vision
+This repository contains the second project in learning AI/ML with Azure, focused on background removal and image analysis using the Azure Computer Vision service.
+
+Overview
+This Python script connects to Azure's Computer Vision API to:
+
+Analyze an image for specified features.
+Remove the background or create a foreground matte from the image.
+It's part of an ongoing exploration into Azure AI/ML capabilities, leveraging cloud-based vision services.
+
+Requirements
+Python 3.x
+Libraries: dotenv, Pillow (PIL), matplotlib, requests, azure.core.exceptions
+Azure Computer Vision API: Requires an endpoint URL and API key.
+Setup
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/Dibyatman/Azure_aiml_implementation-
+Install dependencies:
+
+bash
+Copy code
+pip install python-dotenv Pillow matplotlib requests azure-core
+Configure environment variables:
+
+Create a .env file in the project directory with:
+env
+Copy code
+AI_SERVICE_ENDPOINT=your_azure_endpoint
+AI_SERVICE_KEY=your_azure_key
+Add an image file:
+
+Place an image in an images folder and name it street.jpg, or provide the file path as a command-line argument when running the script.
+Usage
+Run the script:
+
+bash
+Copy code
+python script_name.py
+Alternatively, specify a different image file:
+bash
+Copy code
+python script_name.py images/your_image.jpg
+The script will analyze the image and perform background removal or foreground extraction as specified.
+
+Sample Output
+The output will display the analyzed image features and save or display the image with the background removed.
+
+Error Handling
+Common errors include:
+
+Authentication Error: Invalid API key.
+HTTP Response Error: Issues with image format or endpoint configurations.
