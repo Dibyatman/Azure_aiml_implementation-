@@ -171,3 +171,64 @@ Common errors include:
 
 Authentication Error: Invalid API key.
 HTTP Response Error: Issues with image format or endpoint configurations.
+
+
+
+04. Azure AI Vision Text Reader
+This project leverages the Azure AI Vision SDK to read text from images, with options for both printed and handwritten text. This example demonstrates setting up an Azure Vision client to analyze images, extract text, and highlight the detected text on the image.
+
+Features
+Text Extraction: Uses the Azure AI Vision SDK to detect and read text from images.
+Bounding Polygon Visualization: Highlights text and bounding polygons for each detected word or line in the image.
+User Options: Menu-driven interface for selecting different images to analyze.
+Overview
+The project uses Azure AI Vision Text Reader to:
+
+Detect and read text within images.
+Process and extract text in Indian languages.
+This tool showcases Azure's AI/ML capabilities for optical character recognition, allowing for cloud-based processing.
+
+Requirements
+Python 3.x
+Libraries: dotenv, requests, azure.core.exceptions
+Azure AI Vision Text Reader API: Requires an endpoint URL and API key.
+Setup
+Clone the repository (Repository developed in-house):
+
+bash
+Copy code
+git clone https://github.com/YourGitHub/Azure_Text_Reader_Project
+Install dependencies:
+
+bash
+Copy code
+pip install python-dotenv requests azure-core
+Configure environment variables:
+
+Create a .env file in the project directory with:
+
+env
+Copy code
+AI_SERVICE_ENDPOINT=your_azure_endpoint
+AI_SERVICE_KEY=your_azure_key
+Add an image file:
+
+Place an image in the images folder with the desired text for processing, or provide the file path as a command-line argument.
+Usage
+Run the script:
+
+bash
+Copy code
+python text_reader.py
+Alternatively, specify a different image file:
+
+bash
+Copy code
+python text_reader.py images/your_image.jpg
+The script reads and outputs the text found in the image.
+
+Sample Output
+Extracted text will be displayed in the console and saved as a text file.
+Error Handling
+Authentication Error: Ensure API key validity.
+HTTP Response Error: Check image format or endpoint configurations.
